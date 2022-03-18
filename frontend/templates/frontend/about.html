@@ -1,0 +1,185 @@
+{% extends "frontend/main.html" %}
+{% block content %}
+{% load static %}
+
+    <style>
+        .haveAproject::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    border-radius: 10px;
+    opacity: 0.4;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.send{
+padding: 12px 60px;
+
+width: 285px;
+height: 48px;}
+.hr{
+padding-top: 15px;border-top: 1px solid #f0e9ff;
+}
+.share{
+    height: 48px;
+width: 285px;
+border-radius: 4px;
+padding: 12px, 60px, 12px, 60px;
+margin-left:-20px;
+border-style: solid;
+border-width: 2px;
+color:#FF7A00;
+background: transparent;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+
+
+/* Neutral/white */
+
+border: 1px solid #FF7A00;
+box-sizing: border-box;
+border-radius: 4px;
+    }
+    </style>
+
+
+    <section class="blog_area single-post-area section-padding " style="margin-bottom:-20px;">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 posts-list">
+               <div class="single-post">
+                  <div class="feature-img">
+                     <img class="img-fluid" src="assets/img/blog/single_blog_1.png" alt="">
+                  </div>
+                  <div class="blog_details">
+                     <h2>Proficiency </h2>
+
+                     <p class="excert">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper
+                         ultricies suspendisse et.
+                         Non lacus nibh a sed. Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+
+
+
+                  </div>
+                   <div class="blog_details hr" >
+                     <h2>Fun Facts About Me </h2>
+
+                     <p class="excert">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper
+                         ultricies suspendisse et.
+                         Non lacus nibh a sed. Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+
+
+
+                  </div>
+
+                    <div class="feature-img mb-5">
+                     <img class="img-fluid" src="{% static 'images/ab1.png' %}" alt="">
+                     <img class="img-fluid" src="{% static 'images/ab1.png' %}" alt="">
+                  </div>
+
+
+                   <div class="blog_details hr" >
+                     <h2>Love For Design & My Work </h2>
+
+                     <p class="excert">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper
+                         ultricies suspendisse et.
+                         Non lacus nibh a sed. Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+
+
+
+                  </div>
+
+                   <div class="blog_details hr" >
+                     <h2>Purpose </h2>
+
+                     <p class="excert">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper
+                         ultricies suspendisse et.
+                         Non lacus nibh a sed. Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+
+
+
+                  </div>
+
+               </div>
+
+
+
+               <div class="comment-form">
+                  <h4>Leave a Reply</h4>
+                  <form class="form-contact comment_form" action="#" id="commentForm">
+                     <div class="row">
+                         <div class="col-sm-6">
+                           <div class="form-group">
+                              <input class="form-control" name="email" id="email" type="email" placeholder="Email">
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="form-group">
+                              <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9"
+                                 placeholder="Write Comment"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                         <div class="row d-flex justify-content-end">
+                            <div class="hero__btn p-3" data-animation="fadeInLeft" data-delay=".8s">
+                                <button type="submit" class="share" >Share Portfolio</button>
+                            </div>
+                             <div class="hero__btn p-3" data-animation="fadeInLeft" data-delay=".8s">
+                                <button type="submit" class="btnHire hero-btn send" >Send</button>
+                            </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-lg-4" style="background-color:#EDF3F7;">
+               <div class="blog_right_sidebar" style="background-color:#EDF3F7;">
+                  <aside class="single_sidebar_widget post_category_widget">
+                        <div class="haveAproject" style="height:473px;"  data-background="{% static 'images/hire.png' %}">
+                                <button class="btnMe justify-content-center" style="">Share Portfolio</button>
+                            <br>
+                                <button class="btnCv justify-content-center" style="">View Cv</button>
+
+                        </div>
+                  </aside>
+               </div>
+            </div>
+         </div>
+
+      </div>
+        <div class="work-end  " style="background:#042858;margin-top:50px;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="hero__btn p-2" data-animation="fadeInLeft" data-delay=".8s">
+                        <a href="{% static 'industries.html" class="btnHire hero-btn" >Hire Me</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+   </section>
+
+
+
+
+{% endblock content %}

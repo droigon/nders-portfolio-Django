@@ -1,0 +1,258 @@
+{% extends "frontend/main.html" %}
+{% block content %}
+{% load static %}
+
+    <style>
+        .btnPv{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            width: 187px;
+            height: 48px;
+
+            /* Secondary/01 */
+
+            border: 1px solid #FF7A00;
+            box-sizing: border-box;
+            border-radius: 4px;
+            color: #FF7A00;
+            background-color:#fff;
+        }
+    </style>
+
+    <style>
+            .btnCv{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 60px;
+
+                position: absolute;
+                width: 199px;
+                height: 48px;
+                color:#fff;
+
+                /* Secondary/01 */
+
+                background: #FF7A00;
+                border-radius: 4px;
+            }
+        </style>
+    <section  style="padding-top: 150px;padding-bottom: 0px;">
+        <div class="container">
+            <div class="row ">
+                <img class="ml-2" src="{% static 'icons/arrow.png' %}" />
+                <span class="ml-2 mt-1" style="Line-height:27px;">Back</span>
+            </div>
+        </div>
+    </section>
+    <section  style="padding-top: 50px;padding-bottom: 50px;    margin-left: 20px;
+    margin-right: 20px;" >
+        <div class="container">
+            <div class="row ">
+                <div>
+                 <h2>Video Game: Resident Evil 7</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog_area single-post-area section-padding " style="margin-bottom:-20px;background-color:#EDF3F7;
+        margin-left: 50px; margin-right: 50px;padding: 64px 32px;border-radius: 8px;top: 324px;">
+      <div class="container">
+         <div class="row">
+            <div class="posts-list" style="">
+               <div class="single-post">
+                    <div class="text-center">
+                         <h2>CASE STUDY SUMMARY</h2>
+                     </div>
+                  <div class="blog_details">
+                     <h2>About Name</h2>
+
+                     <p class="excert">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper
+                         ultricies suspendisse et.
+                         Non lacus nibh a sed. Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+                  </div>
+                   <div class="blog_details hr" >
+                     <h2>Role</h2>
+                     <p class="excert">
+                        UI Designer, Ux Designer
+                     </p>
+                  </div>
+
+                   <div class="blog_details hr" >
+                     <h2>Responsibilties </h2>
+                     <p class="excert">
+                        Wireframing, Low Fidelity, High Fidelity, Journey Mapping, User Persona.......
+                     </p>
+                  </div>
+                   <div class="blog_details hr" >
+                     <h2>Tools </h2>
+                     <p class="excert">
+                       Figma, Photoshop, Illustrator, Corel Draw, Indesign, Premier Pro, Milanote, After Effects, Unreal Engine.
+                     </p>
+                  </div>
+                   <div class="blog_details hr" >
+                     <h2>Prototype </h2>
+                     <p class="excert">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae
+                         semper ultricies suspendisse et. Non lacus nibh a sed.
+                         Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+                  </div>
+
+                    <div class="row">
+                       <div class="col-md-3">
+                           <div class="feature-img mb-5">
+                                <img class="img-fluid" src="{% static 'images/h1.png' %}" alt="">
+                            </div>
+                       </div>
+                       <div class="col-md-3">
+                           <div class="feature-img mb-5">
+                                <img class="img-fluid" src="{% static 'images/h2.png' %}" alt="">
+                            </div>
+                       </div>
+                        <div class="col-md-3">
+                           <div class="feature-img mb-5">
+                                <img class="img-fluid" src="{% static 'images/h3.png' %}" alt="">
+                            </div>
+                       </div>
+                        <div class="col-md-3">
+                           <div class="feature-img mb-5">
+                                <img class="img-fluid" src="{% static 'images/h4.png' %}" alt="">
+                            </div>
+                       </div>
+                    </div>
+                   <div class="blog_details hr" >
+                     <h2>Interactions </h2>
+                     <p class="excert">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper ultricies suspendisse et. Non lacus nibh a sed.
+                         Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+                  </div>
+               </div>
+
+                <!--Second-->
+
+                <div class="single-post">
+                    <div class="text-center">
+                         <h2>CASE STUDY SUMMARY</h2>
+                     </div>
+                  <div class="blog_details">
+                     <h2>About Name</h2>
+
+                     <p class="excert">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper
+                         ultricies suspendisse et.
+                         Non lacus nibh a sed. Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+                  </div>
+                   <div class="blog_details hr" >
+                     <h2>Role</h2>
+                     <p class="excert">
+                        UI Designer, Ux Designer
+                     </p>
+                  </div>
+
+                   <div class="blog_details hr" >
+                     <h2>Responsibilties </h2>
+                     <p class="excert">
+                        Wireframing, Low Fidelity, High Fidelity, Journey Mapping, User Persona.......
+                     </p>
+                  </div>
+                   <div class="blog_details hr" >
+                     <h2>Tools </h2>
+                     <p class="excert">
+                       Figma, Photoshop, Illustrator, Corel Draw, Indesign, Premier Pro, Milanote, After Effects, Unreal Engine.
+                     </p>
+                  </div>
+                   <div class="blog_details hr" >
+                     <h2>Prototype </h2>
+                     <p class="excert">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae
+                         semper ultricies suspendisse et. Non lacus nibh a sed.
+                         Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+                  </div>
+
+                    <div class="row">
+                       <div class="col-md-3">
+                           <div class="feature-img mb-5">
+                                <img class="img-fluid" src="{% static 'images/h1.png' %}" alt="">
+                            </div>
+                       </div>
+                       <div class="col-md-3">
+                           <div class="feature-img mb-5">
+                                <img class="img-fluid" src="{% static 'images/h2.png' %}" alt="">
+                            </div>
+                       </div>
+                        <div class="col-md-3">
+                           <div class="feature-img mb-5">
+                                <img class="img-fluid" src="{% static 'images/h3.png' %}" alt="">
+                            </div>
+                       </div>
+                        <div class="col-md-3">
+                           <div class="feature-img mb-5">
+                                <img class="img-fluid" src="{% static 'images/h4.png' %}" alt="">
+                            </div>
+                       </div>
+                    </div>
+                   <div class="blog_details hr" >
+                     <h2>Interactions </h2>
+                     <p class="excert">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper ultricies suspendisse et. Non lacus nibh a sed.
+                         Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+                  </div>
+               </div>
+
+
+
+
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+    <section class="mt-4 mb-3 p-3">
+            <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-6">
+                                <button class="btnPv justify-content-center" style="">Previous</button>
+
+                        </div>
+                        <div class="col-6">
+                            <button class="btnCv justify-content-center" style="">Next Work</button>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+        <div class="work-end  " style="background:#042858;margin-top:50px;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="hero__btn p-2" data-animation="fadeInLeft" data-delay=".8s">
+                        <a href="{% static 'industries.html" class="btnHire hero-btn" >Hire Me</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+{% endblock content %}

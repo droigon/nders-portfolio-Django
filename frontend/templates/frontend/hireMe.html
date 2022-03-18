@@ -1,0 +1,94 @@
+{% extends "frontend/main.html" %}
+{% block content %}
+{% load static %}
+
+    <style>
+        .haveAproject::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    border-radius: 10px;
+    opacity: 0.4;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.send{
+padding: 12px 60px;
+
+width: 285px;
+height: 48px;}
+    </style>
+
+
+    <section class="blog_area single-post-area section-padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 posts-list">
+               <div class="single-post">
+                  <div class="feature-img">
+                     <img class="img-fluid" src="assets/img/blog/single_blog_1.png" alt="">
+                  </div>
+                  <div class="blog_details">
+                     <h2>Proficiency </h2>
+
+                     <p class="excert">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. At risus gravida nunc suscipit id id ac purus diam.
+                         Molestie risus sagittis, tincidunt morbi tempus nisi, suscipit posuere. Porttitor posuere nec maecenas odio vitae semper
+                         ultricies suspendisse et.
+                         Non lacus nibh a sed. Vestibulum purus donec quis vulputate nulla porta. Quis gravida elementum venenatis tortor neque arcu.
+                     </p>
+
+
+
+                  </div>
+               </div>
+
+
+
+               <div class="comment-form">
+                  <h4>Leave a Reply</h4>
+                  <form class="form-contact comment_form" action="#" id="commentForm">
+                     <div class="row">
+                         <div class="col-sm-6">
+                           <div class="form-group">
+                              <input class="form-control" name="email" id="email" type="email" placeholder="Email">
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="form-group">
+                              <textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9"
+                                 placeholder="Write Comment"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                         <div class="row d-flex justify-content-end">
+                            <div class="hero__btn p-3" data-animation="fadeInLeft" data-delay=".8s">
+                                <button type="submit" class="btnHire hero-btn send" >Send</button>
+                            </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-lg-4" style="background-color:#EDF3F7;">
+               <div class="blog_right_sidebar" style="background-color:#EDF3F7;">
+                  <aside class="single_sidebar_widget post_category_widget">
+                        <div class="haveAproject" style="height:473px;"  data-background="{% static 'images/hire.png' %}">
+                                <button class="btnMe justify-content-center" style="">Share Portfolio</button>
+                            <br>
+                                <button class="btnCv justify-content-center" style="">View Cv</button>
+
+                        </div>
+                  </aside>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+{% endblock content %}
